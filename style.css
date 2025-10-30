@@ -1,0 +1,423 @@
+*{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif ;
+}
+/***nav-bar***/
+body{
+    background-color: black;
+}
+.basic-cont{
+    background-image: url("netflix_bg.jpg");
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+.cont-box{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.78);
+   
+}
+.net-header{
+    height: 5rem;
+    width: 96%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.net-header1{
+    width: 25rem;
+    padding-left: 5rem;
+}
+
+.net-logo{
+    margin-right: 34.375rem;
+    padding-top: 0.9375rem;
+}
+.net-logo img{
+    height: 2.685rem;
+    width: 10rem;
+}
+.net-header2{
+    width:53.125rem;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    padding-left: 34.375rem;
+}
+.fa-solid {
+    color: white;
+    font-size: 1rem;
+    /* font-weight: 300; */
+}
+.lang-selector{
+    height: 2rem;
+    width: 8.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid rgba(255, 255, 255, 0.412);
+    border-radius: 3px;
+    
+    
+}
+.lang{
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.1rem;
+ 
+}
+.sign-in{
+    height: 2rem;
+    width: 4.8125rem;
+    background-color: rgb(229,9,20);
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    border-radius: 3px;
+    margin-left: 1.25rem;
+}
+/***content***/
+.content{
+    height: 37rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.content-box{
+    height: 34.5rem;
+    width: 96%;
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem; 
+    text-align: center;
+    
+}
+.content-box1{
+    height: 8.75rem;
+    width: 36.75rem;
+    font-size:1.8rem;
+    font-weight: 700;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 6.875rem;
+    text-align: center;
+}
+.content-box1 h1{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.content-box2{
+    height: 1.25rem;
+    width: 31.75rem;
+    color: white;
+    font-size: 1.25rem;
+    font-weight: 700;
+    text-align: center;
+}
+.content-box3{
+    height: 3rem;
+    width: 36.75rem;
+    color: rgba(255,255,255,0.88);
+    font-size: 0.85rem;
+    font-weight: 100;
+    padding-top: 1.875rem;
+    text-align: center;
+}
+.content-box4{
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+#email{
+    height:3.5rem;
+    width: 22.875rem;
+    padding-left: 1.25rem;
+    background-color: rgba(33, 28, 28,0.8);
+    color: rgba(255, 255, 255, 0.749);
+    font-size: 1rem;
+    border-radius: 3px;
+    border: 1px solid rgba(255, 255, 255, 0.412);
+}
+#start{
+     height:3.5rem;
+    width: 11.3125rem;
+    background-color: rgb(229,9,20) ;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 700;
+    border-radius: 4px;
+    border: none;
+    margin-left: 0.625rem;
+}
+.border-line{
+    height: 6.25rem;
+    width: 100%;
+    border-radius: 90%;
+    border-top:5px solid rgba(229, 9, 20, 1);
+    margin-top: 1rem;
+    background-color: black;
+}
+/* Tablets */
+@media (max-width: 1024px) {
+  .basic-cont{
+    height: 75vh;
+  }
+  .net-header {
+    flex-direction: column;
+    height: auto;
+    padding: 10px 0;
+  }
+
+  .net-header1, .net-header2 {
+    padding-left: 0;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .net-header1{
+    padding-left: 10px;
+  }
+
+  .net-header2 {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .content-box1, .content-box2, .content-box3, .content-box4 {
+    width: 90%;
+  }
+
+  #email, #start {
+    width: 100%;
+    margin: 5px 0;
+  }
+
+  .content-box4 {
+    flex-direction: column;
+  }
+}
+
+/* Mobile phones */
+@media (max-width: 600px) {
+  .basic-cont{
+    height: 80vh;
+  }
+  .net-logo img {
+    width: 120px;
+  }
+
+  .lang-selector {
+    width: 100px;
+    font-size: 0.9rem;
+  }
+
+  .sign-in {
+    width: 70px;
+    font-size: 0.8rem;
+  }
+
+  .content-box1 h1 {
+    font-size: 1.5rem;
+  }
+
+  .content-box2 {
+    font-size: 1rem;
+  }
+
+  .content-box3 {
+    font-size: 0.75rem;
+  }
+
+  #email {
+    font-size: 0.9rem;
+  }
+
+  #start {
+    font-size: 1.2rem;
+  }
+}
+.trending-shows{
+    height:315vh;
+    width: 100vw;
+    background-color: black;
+    margin-top: 5rem;
+}
+.trending-shows h2{
+    color: white;
+    padding-left: 10rem;
+    padding-bottom: 1.5rem;
+}
+.trending{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap:2rem;
+}
+.box{
+    height:15.75rem ;
+    width: 14%;
+    background-color: aliceblue;
+    border-radius: 7px;
+    overflow: hidden;
+}
+.box img{
+    height:15.75rem ;
+    width: 100%;
+    border-radius: 7px;
+}
+.box :hover{
+    transform: scale(1.05);
+}
+.box span{
+    color:white;
+    font-size: 5rem;
+    font-weight: 900;
+    background-color: transparent;
+    position: absolute;
+    margin-top: 10rem;
+    margin-right: 3rem;
+}
+.reasons-box{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    
+}
+.rea{
+  height: 15.5625rem;
+  width: 17.5rem;
+  background-color: rgb(50, 50, 70);
+  border-radius: 1rem;
+  color: white;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.rea h3{
+  padding-top: 1rem;
+  font-size: 1.4rem;
+}
+.rea p{
+  padding-top: 1rem;
+  color: #ffffffb3;
+}
+.frequency{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.ques{
+  height:5.25rem ;
+  width: 76rem;
+  background-color: rgb(137,137,137,0.4);
+  display: flex;
+  
+  align-items: center;
+  flex-direction: row;
+}
+.ques p{
+  color: white;
+  font-size: 1.5rem;
+  width: 96%;
+  padding-left: 2rem;
+}
+.ques i{
+  font-size: 1.5rem;
+}
+/***footer***/
+.footer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5rem;
+}
+.trending-shows h3{
+  color: white; 
+}
+.backTonav{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 1.2rem;
+}
+.backTonav #email{
+  width: 35.625rem;
+}
+.backTonav #start{
+  width: 13.75rem;
+}
+.footer-bar{
+  color: #ffffffb3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-bar span{
+  margin-top: 4rem;
+  margin-right: 60rem;
+}
+.listing{
+  width: 76rem;
+  height:19rem ;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+  flex-direction: row;
+  /* background-color: antiquewhite; */
+}
+.call{
+  color:#ffffffb3 ;
+  padding: 5rem 0 0 10rem;
+}
+.lis{
+  width: 19rem;
+  height: 9.375rem;
+  display: flex;
+  /* align-items: center; */
+  justify-content: center;
+  flex-direction: column;
+}
+.lis a{
+  /* padding-left:2rem ; */
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  color: #ffffffb3 ;
+}
+.lang-selector1{
+  height: 2rem;
+    width: 8.75rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 0.5px solid rgba(255, 255, 255, 0.412);
+    border-radius: 3px;
+    margin-left: 10rem;
+}
+.net{
+  color: #ffffffb3;
+  margin-left: 10rem;
+  
+}
+.net p{
+  padding-top: 2rem;
+
+}
+#learn-more{
+  color: #ffffff80;
+  font-size: 0.79rem;
+}
